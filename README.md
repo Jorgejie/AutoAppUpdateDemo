@@ -1,0 +1,2 @@
+# AutoAppUpdateDemo
+利用github的实现app更新的demo
