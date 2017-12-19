@@ -27,5 +27,16 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
+
+
     compile 'com.qianwen:update-app:3.3.8'
+
+    compile 'com.qianwen:okhttp-utils:3.8.0'
+
+//    compile 'com.lzy.net:okgo:3.0.4'
+
+    compile 'io.reactivex:rxjava:1.2.9'
+
+    compile 'io.reactivex:rxandroid:1.2.0'
+    compile 'com.tbruyelle.rxpermissions:rxpermissions:0.9.4@aar'
 }
