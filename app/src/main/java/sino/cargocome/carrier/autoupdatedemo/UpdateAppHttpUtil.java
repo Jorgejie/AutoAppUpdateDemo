@@ -6,11 +6,15 @@ import com.vector.update_app.HttpManager;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.FileCallBack;
 import com.zhy.http.okhttp.callback.StringCallback;
+import com.zhy.http.okhttp.request.OkHttpRequest;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.Map;
 
 import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
@@ -44,6 +48,22 @@ public class UpdateAppHttpUtil implements HttpManager {
                         callBack.onResponse(response);
                     }
                 });
+//        OkHttpClient okHttpClient = new OkHttpClient();
+//        Request request = new Request.Builder()
+//                .url(url)
+//                .build();
+//        Call call = okHttpClient.newCall(request);
+//        call.enqueue(new okhttp3.Callback() {
+//            @Override
+//            public void onFailure(Call call, IOException e) {
+//
+//            }
+//
+//            @Override
+//            public void onResponse(Call call, Response response) throws IOException {
+//
+//            }
+//        });
     }
 
     /**
@@ -109,6 +129,8 @@ public class UpdateAppHttpUtil implements HttpManager {
                         callback.onBefore();
                     }
                 });
+
+
 
     }
 }
